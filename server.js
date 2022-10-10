@@ -26,7 +26,7 @@ app.use("/task", task);
 // const Candidates = require("./Routes/CandidateData");
 // app.use("/candidate", Candidates);
 app.listen(process.env.PORT || 8080, () => {
-  console.log("Server running on port " + PORT);
+  console.log("Server running on port ");
 });
 
 const connection = mongoose.connection;
