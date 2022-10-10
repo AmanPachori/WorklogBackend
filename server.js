@@ -26,7 +26,7 @@ app.use("/task", task);
 
 // const Candidates = require("./Routes/CandidateData");
 // app.use("/candidate", Candidates);
-app.listen(PORT, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log("Server running on port " + PORT);
 });
 
