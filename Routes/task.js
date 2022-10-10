@@ -4,7 +4,7 @@ const {
 addTask,
 totalTime
 } = require("../Controllers/task.controller");
-router.post("/", Verify,addTask);
+router.post("/",addTask);
 router.get("/get/:id", totalTime);
 
 module.exports = router;

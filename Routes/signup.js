@@ -7,6 +7,6 @@ const {
 } = require("../Controllers/user.controller");
 router.post("/", SignupUser);
 router.post("/loginuser", SigninUser);
-router.get("/view/:id", VerifyToken, Getme);
+router.get("/view/:id", Getme);
 
 module.exports = router;
