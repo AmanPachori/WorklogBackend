@@ -21,11 +21,11 @@ app.use("/admin", signup);
 const employee = require("./Routes/employee");
 app.use("/employee", employee);
 const task = require("./Routes/task");
-app.use("/", task);
+app.use("/task", task);
 
 // const Candidates = require("./Routes/CandidateData");
 // app.use("/candidate", Candidates);
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 8080, () => {
   console.log("Server running on port " + PORT);
 });
 
